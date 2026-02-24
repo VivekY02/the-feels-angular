@@ -1,0 +1,97 @@
+#main-header {
+    background: rgba(255, 255, 255, 0.225);
+    transition: background 0.3s ease;
+}
+
+#main-header.scrolled {
+    background: white;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header .header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 60px;
+}
+
+
+
+header .logo {
+    height: 50px;
+    width: auto;
+}
+
+
+
+header nav ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #171717;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #23aa2a;
+}
+
+
+
+nav .nav-button {
+    background: #ff5733;
+    color: #fff;
+    padding: 8px 24px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+
+nav .nav-button:hover {
+    color: #23aa2a;
+    border-color: #23aa2a;
+    background-color: white;
+}
+
+/* Scroll State */
+#main-header.scrolled nav .nav-button {
+    color: white;
+}
+
+#main-header.scrolled nav .nav-button:hover {
+    color: #23aa2a;
+    border-color: #23aa2a;
+    background-color: white;
+}
